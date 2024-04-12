@@ -37,6 +37,7 @@ jobs:
             meson \
             libmpdclient-dev \
             check
+
       - name: Meson Build
         uses: BSFishy/meson-build@v1.0.3
         with:
@@ -70,6 +71,7 @@ jobs:
             meson ninja \
             libmpdclient \
             check
+
       - name: Meson Build
         uses: BSFishy/meson-build@v1.0.3
         with:
@@ -142,4 +144,3 @@ jobs:
         with:
           name: mpc.exe
           path: output/mpc.exe
-          
