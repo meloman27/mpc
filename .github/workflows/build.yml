@@ -95,6 +95,7 @@ jobs:
       - name: Meson Build
         uses: BSFishy/meson-build@v1.0.3
         with:
+          arch: x86
           action: build
           directory: output
           setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback
@@ -126,6 +127,7 @@ jobs:
       - name: Meson Build
         uses: BSFishy/meson-build@v1.0.3
         with:
+          arch: x86
           action: build
           directory: output
           setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback
