@@ -98,7 +98,7 @@ jobs:
           arch: x86
           action: build
           directory: output
-          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback
+          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback --32
           meson-version: 0.56.0
 
       - name: Unit Tests
@@ -106,7 +106,7 @@ jobs:
         with:
           action: test
           directory: output
-          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback
+          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback --32
           meson-version: 0.56.0
 
       - name: "Upload mpc.exe"
@@ -130,7 +130,7 @@ jobs:
           arch: x86
           action: build
           directory: output
-          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback
+          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback --32
           meson-version: 0.56.0
 
       - name: Unit Tests
@@ -138,7 +138,7 @@ jobs:
         with:
           action: test
           directory: output
-          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback
+          setup-options: -Ddocumentation=disabled -Dwrap_mode=forcefallback --32
           meson-version: 0.56.0
 
       - name: "Upload mpc.exe"
